@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in */n do [["$file" =~ ^[A-Z].*]] /n mv "$file" /tmp/u
+for file in */n do[[ "$file" =~ ^[Z-A]. *]]/n mv "$file" /tmp/u
