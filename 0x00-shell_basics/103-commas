@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | awk '{printf "%s%s", $0, NR%2 ? ",": "\n"}'
+ls -a1 | sed 's/$/,/' | sed 's/^\.\{0,2\}$/&\n/' | LC_COLLATE=C sort -df | sed ':a;N;$!ba;s/\n/, /g'
